@@ -1,1 +1,14 @@
-<!-- Create your form here -->
+<%= form_tag students_path do %>
+  <label>Student Form</label><br>
+  <%= text_field_tag :first_name %><br>
+
+  <label>Last Name</label><br>
+  <%= text_area_tag :last_name %><br>
+
+  <%= submit_tag "Submit Student" %>
+<% end %>
+
+
+<%#  -form renders with the new action
+ -new form submits content and renders form content
+  -creates a record in the database %>
